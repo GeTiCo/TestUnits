@@ -1,15 +1,19 @@
 # UnitTest Work17 Файловая система
 
 Изменения в Тестах
+
 FileTest.cs
+
     Изменения параметров тестового класса
+    
     1. Свойства из раздела ПРОВАЙДЕРЫ были переписаны на 'IEnumerable<object[]> NAME => new List<object[]>'
 
     Изменения в тестах
     1. Все методы тестов были переименованы на 'TestMethod, DynamicData(nameof(NAME))'
 
 FileStorageTest.cs
-Изменения параметров тестового класса
+
+    Изменения параметров тестового класса
 
     1. Константа 'public const string WRONG_SIZE_CONTENT_STRING' (Кол-во символов снижено до 200)
     2. Свойства из раздела ПРОВАЙДЕРЫ были переписаны на 'IEnumerable<object[]> NAME => new List<object[]>'
