@@ -9,6 +9,7 @@ FileTest.cs
     1. Свойства из раздела ПРОВАЙДЕРЫ были переписаны на 'IEnumerable<object[]> NAME => new List<object[]>'
 
     Изменения в тестах
+    
     1. Все методы тестов были переименованы на 'TestMethod, DynamicData(nameof(NAME))'
 
 FileStorageTest.cs
@@ -25,5 +26,5 @@ FileStorageTest.cs
     2. В тесте 'GetFileTest' Assert.IsFalse был заменен на Assert.IsTrue
     3. В тесте 'GetFilesTest' метод 'Test' был изменен на 'TestMethod'
 
-1. Комментарии Х
-2. Рабочие тесты Х
+1. Комментарии V
+2. Рабочие тесты V
