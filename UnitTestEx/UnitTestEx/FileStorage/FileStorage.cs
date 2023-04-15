@@ -15,6 +15,9 @@ namespace UnitTestEx
          * Construct object and set max storage size and available size according passed values
          * @param size FileStorage size
          */
+        /*----------------------------------
+         Конструктор принимающий размер файла 
+         ----------------------------------*/
         public FileStorage(int size) {
             maxSize = size;
             availableSize += maxSize;
@@ -23,6 +26,9 @@ namespace UnitTestEx
         /**
          * Construct object and set max storage size and available size based on default value=100
          */
+        /*----------------------------------
+         Пустой конструктор
+         ----------------------------------*/
         public FileStorage() {
         }
 
@@ -33,6 +39,9 @@ namespace UnitTestEx
          * @return result of file saving
          * @throws FileNameAlreadyExistsException in case of already existent filename
          */
+        /*----------------------------------
+         Запись файла и добавление в лист
+         ----------------------------------*/
         public bool Write(File file) {
             // Проверка существования файла
             if (IsExists(file.GetFilename())) {
@@ -58,6 +67,9 @@ namespace UnitTestEx
          * @param fileName to search
          * @return result of checking
          */
+        /*----------------------------------
+         Проверка наличия файла
+         ----------------------------------*/
         public bool IsExists(String fileName) {
             // Для каждого элемента с типом File из Листа files
             foreach (File file in files) {
@@ -74,6 +86,9 @@ namespace UnitTestEx
          * @param fileName of file to delete
          * @return result of file deleting
          */
+        /*----------------------------------
+         Удаление файла
+         ----------------------------------*/
         public bool Delete(String fileName) {
             return files.Remove(GetFile(fileName));
         }
@@ -82,6 +97,9 @@ namespace UnitTestEx
          * Get all Files saved in the storage
          * @return list of files
          */
+        /*----------------------------------
+         Возвращает лист файлов
+         ----------------------------------*/
         public List<File> GetFiles() {
             return files;
         }
@@ -91,6 +109,9 @@ namespace UnitTestEx
          * @param fileName of file to get
          * @return file
          */
+        /*----------------------------------
+         Возвращает файл по названию
+         ----------------------------------*/
         public File GetFile(String fileName) {
             if (IsExists(fileName)) {
                 foreach (File file in files) {
@@ -106,6 +127,9 @@ namespace UnitTestEx
          * Delete all files from files list
          * @return bool
          */
+        /*----------------------------------
+         Удаление всех файлов
+         ----------------------------------*/
         public bool DeleteAllFiles()
         {
             files.RemoveRange(0, files.Count - 1);

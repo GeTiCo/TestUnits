@@ -18,6 +18,9 @@ namespace UnitTestEx
          *                 https://en.wikipedia.org/wiki/Path_(computing)#Representations_of_paths_by_operating_system_and_shell)
          * @param content File content (could be empty, but must be set)
          */
+        /*----------------------------------
+         Конструктор, заполняюший информацию о файле
+         ----------------------------------*/
         public File(String filename, String content)
         {
             this.filename = filename;
@@ -30,6 +33,9 @@ namespace UnitTestEx
          * Get exactly file size
          * @return File size
          */
+        /*----------------------------------
+         Возвращает размер файла
+         ----------------------------------*/
         public double GetSize()
         {
             return (int)size;
@@ -39,6 +45,9 @@ namespace UnitTestEx
          * Get File filename
          * @return File filename
          */
+        /*----------------------------------
+         Возвращает наименование файла
+         ----------------------------------*/
         public string GetFilename()
         {
             return filename;
